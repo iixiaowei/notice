@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/new",
+    "pages/team/team",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "backGroundColor":"#000",
+    "list":[
+        {
+          "pagePath":"pages/index/index",
+          "text":"列表",
+           "iconPath":"images/icon_list.png",
+           "selectedIconPath":"images/icon_list_sel.png"
+          },
+        {
+          "pagePath":"pages/index/new",
+          "text":"新发布"
+          },
+        {
+          "pagePath":"pages/index/index",
+          "text":"团队"
+        },
+        {
+          "pagePath":"pages/index/index",
+          "text":"设置"
+        }
+    ]
+  }
+}

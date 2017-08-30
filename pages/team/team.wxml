@@ -1,0 +1,38 @@
+<!--team.wxml-->
+
+<view style="margin-top:80px;margin:0 auto;width:100%;">
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+   <view class="section" style="height:85px;background-color:#ffffff;">
+     <view style="height:30px;"></view>
+     <view class="section_left">
+         <button type="primary" size="mini" plain="plain" bindtap="newClass" bindinput="bindData" style="width:100%;border:1px solid #7a7a7a;color:#7a7a7a;"  hover-class="other-button-hover" > 学校班级 </button>
+     </view>
+     <view class="section_right">
+         <button type="primary" size="mini" plain="plain" bindtap="newTeam" style="margin-left:2px;width:100%;background-color:#54b33b;color:#ffffff;" hover-class="other-button-hover" > 团队组织 </button>
+     </view>
+   </view>  
+   
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+            <text style="float:left;margin-right:40px;">团队名</text><input  type="text" name="team_name" value="{{team_name}}" placeholder="团队名" style="float:left;margin-top:2px;" />
+   </view>
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+   
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+      <text style="float:left;margin-right:40px;">备注名</text><input  type="text"  name="remark" value="{{remark}}" placeholder="备注名" style="float:left;margin-top:2px;" />
+   </view>
+   <view style="width:100%;height:14px;background-color:#f1f0f5;"></view>
+   
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+      <text style="float:left;margin-right:40px;">我是</text><input type="text"  name="username" value="{{username}}" placeholder="组织者/领头人" style="float:left;margin-top:2px;" />
+   </view>
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+      <text style="float:left;margin-right:40px;">我是管理员</text><switch name="manager" checked="{{manager}}" style="float:right;" />
+   </view>
+   <view style="width:80%;height:100%;background-color:#f1f0f5;margin:0 auto;margin-top:30px;">
+         <button type="primary" size="default" plain="false" formType="submit" style="background-color:#54b33b;color:#ffffff;"> 创建团队 </button>
+   </view>
+</form>
+</view>
+  

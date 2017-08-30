@@ -1,0 +1,47 @@
+<view style="margin-top:80px;margin:0 auto;width:100%;">
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+    
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+             
+            
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                  发送给   <text style="margin-left:20px;color:#555555;">{{array[index]}}</text>
+                </view>
+            </picker>
+            
+            <input type="hidden" name="source_id" />            
+   </view>
+   <view style="width:100%;height:14px;background-color:#f1f0f5;"></view>
+   <view class="section" style="line-height:30px;height:40px;padding-top:16px;">
+      <input  type="text"  name="title" value="{{title}}" placeholder="标题" style="float:left;margin-top:2px;width:100%;" />
+   </view>
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+   <view class="section" style="line-height:30px;height:180px;padding-top:16px;">
+      <textarea placeholder="这里可以输入通知内容" name="content" auto-focus  style="width:100%;" />
+    <image style="width: 30px; height: 24px; background-color: #eeeeee;" src="/images/img.png" bindtap="didPressChooesImage"></image>
+   </view>
+   
+   <view style="width:100%;height:1.5px;background-color:#f1f0f5;"></view>
+ 
+   <view class="{{imageUrl?'section view_show':'view_hide'}}" style="padding-top:16px;padding-left:36px;">
+        
+       <view wx:for="{{arrayPics}}" style="float:left;margin-right:5px;">
+           <image src="{{item.imageUrl}}?imageView2/1/w/96/h/96" style="width:96px;height:96px;"/>
+       </view>
+        
+       <input type="hidden" name="imageids" /> 
+   </view>
+  
+   <view style="width:100%;height:14px;background-color:#f1f0f5;clear:both;"></view>
+   <view style="width:80%;height:100%;background-color:#f1f0f5;margin:0 auto;margin-top:20px;">
+         <button type="primary" size="default" plain="false" formType="submit" style="background-color:#54b33b;color:#ffffff;"> 保存 </button>
+   </view>
+   
+   <view style="width:80%;height:100%;background-color:#f1f0f5;margin:0 auto;margin-top:20px;">
+         <button type="default" size="default" plain="false" formType="submit" style=""> 取消 </button>
+   </view>
+</form>
+</view>
+  

@@ -1,0 +1,11 @@
+.section{ width:90%;margin-top:0;clear:both;margin:0 auto;}
+.section_left{ float:left;width:50%;}
+.section_right{ float:left;width:50%;}
+
+.button-hover {
+  background-color: red;
+}
+ 
+.other-button-hover{
+  width:100%;background-color:#54b33b;color:#ffffff;
+}
