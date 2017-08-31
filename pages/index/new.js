@@ -301,10 +301,11 @@ Page({
                         if (jsonStr == '') {
                             jsonStr = [];
                         }
+
                         jsonStr.push({imageUrl: imageUrl});
 
                         wx.setStorageSync('notify_pics', jsonStr);
-                        pics = wx.getStorageSync('notify_pics');
+                        var  pics = wx.getStorageSync('notify_pics');
                         console.log("pics::::" + pics);
 
                         var imageidsStr = '';
@@ -317,7 +318,7 @@ Page({
                         wx.setStorageSync('notify_pics_ids', imageidsStr);
 
                         that.setData({
-                            arrayPics: pics,
+                            arrayPics: jsonStr,
                             imageUrl: imageUrl,
                             imageids: imageidsStr
                         })

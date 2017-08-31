@@ -1,0 +1,10 @@
+.section{ width:90%;margin-top:0;clear:both;margin:0 auto;}
+.section_left{ float:left;width:50%;}
+.section_right{ float:left;width:50%;}
+
+.view_hide{
+ display: none;
+}
+.view_show{
+ display: block;
+}

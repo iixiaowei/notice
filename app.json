@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/index/new",
+    "pages/index/detail",
     "pages/team/team",
     "pages/logs/logs"
   ],
@@ -17,20 +18,26 @@
         {
           "pagePath":"pages/index/index",
           "text":"列表",
-           "iconPath":"images/icon_list.png",
-           "selectedIconPath":"images/icon_list_sel.png"
+          "iconPath":"images/List.png",
+          "selectedIconPath":"images/Click-List.png"
           },
         {
           "pagePath":"pages/index/new",
-          "text":"新发布"
+          "text":"新发布",
+          "iconPath":"images/Publish.png",
+          "selectedIconPath":"images/Click-Publish.png"
           },
         {
           "pagePath":"pages/index/index",
-          "text":"团队"
+          "text":"团队",
+          "iconPath":"images/Team.png",
+          "selectedIconPath":"images/Click-Team.png"
         },
         {
-          "pagePath":"pages/index/index",
-          "text":"设置"
+          "pagePath":"pages/index/detail",
+          "text":"设置",
+          "iconPath":"images/Settings.png",
+          "selectedIconPath":"images/Click-Settings.png"
         }
     ]
   }
